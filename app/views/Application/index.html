@@ -1,0 +1,9 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>Hello World!</h1>
+What is your name?
+<form action="@{Application.sayHello()}" method="POST">
+	<input type="text" name="myName" />
+ 	<input type="submit" name="hello" value="Say hello!" />
+</form>
